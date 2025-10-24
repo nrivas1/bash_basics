@@ -1,3 +1,4 @@
+
 #!/bin/sh
 
 
@@ -19,3 +20,15 @@ fi
 # that prints "it's cold" if the temperature is < 40
 # it's chilly if < 60, it's okay if < 70 and, it's hot for 
 # everything else
+
+echo "Enter temperature:"
+read t
+
+if [ $t -le 39 ]; then
+    echo "Brrr! Freezing out here."
+elif [ $t -lt 60 ]; then
+    echo "Kind of chilly today."
+elif [ $t -lt 70 ]; then
+    echo "Pretty comfortable weather."
+else
+  
